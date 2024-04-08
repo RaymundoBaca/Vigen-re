@@ -141,7 +141,7 @@ public class Ventana extends javax.swing.JFrame {
 //Código Adaptado del método César a Vigenere
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jTextArea2.setText(""); // Borra el contenido de jTextArea2
-        // Obtiene el texto y la palabra clave
+        // Obtiene el texto y la palabra clave.
         String cad = jTextArea1.getText();
         String clave = jTextField1.getText().toLowerCase(); // Obtener la palabra clave
         // Convertimos cad y clave en arreglos de caracteres
