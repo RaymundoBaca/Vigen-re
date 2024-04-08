@@ -1,3 +1,8 @@
+//Librerías utilizadas:
+
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /*
 Hecho por: José Raymundo Baca Hernández
 Algoritmos y Sistemas de Cifrado - Criptografía
@@ -7,6 +12,16 @@ public class Ventana extends javax.swing.JFrame {
 
     public Ventana() {
         initComponents();
+        setLocationRelativeTo(null); // Centrar el JFrame en la pantalla
+        setTitle("Método Vigenere"); //Declaramos título
+        setIconImage(getIconImage()); //Pone el icono personalizado
+    }
+    
+    @Override
+    public Image getIconImage() {
+        //Cambia el icono del JFrame
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Logo/Vigenere.jpg"));
+        return retValue;
     }
 
     /**
@@ -34,6 +49,7 @@ public class Ventana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -122,7 +138,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
