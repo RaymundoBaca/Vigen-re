@@ -160,7 +160,7 @@ public class Ventana extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//Código Adaptado del método César a Vigenere
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jTextArea2.setText(""); // Borra el contenido de jTextArea2
         // Obtiene el texto y la palabra clave.
