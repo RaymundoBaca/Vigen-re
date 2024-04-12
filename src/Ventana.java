@@ -61,6 +61,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel2.setText("Texto plano");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 42, -1, -1));
 
+        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
@@ -69,6 +70,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
+        jTextArea2.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jScrollPane2.setViewportView(jTextArea2);
@@ -76,6 +78,7 @@ public class Ventana extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(204, 204, 255));
         jLabel3.setText("Texto cifrado");
 
+        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -85,7 +88,8 @@ public class Ventana extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 102));
         jLabel4.setText("Palabra clave");
 
-        jButton2.setForeground(new java.awt.Color(153, 0, 0));
+        jButton2.setBackground(new java.awt.Color(51, 51, 51));
+        jButton2.setForeground(new java.awt.Color(255, 153, 0));
         jButton2.setText("Limpiar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +97,8 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setForeground(new java.awt.Color(0, 153, 0));
+        jButton3.setBackground(new java.awt.Color(51, 51, 51));
+        jButton3.setForeground(new java.awt.Color(51, 204, 0));
         jButton3.setText("Descifrar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +106,8 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setForeground(new java.awt.Color(0, 153, 0));
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jButton1.setForeground(new java.awt.Color(255, 255, 51));
         jButton1.setText("Cifrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
